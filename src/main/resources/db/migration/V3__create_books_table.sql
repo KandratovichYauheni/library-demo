@@ -1,0 +1,11 @@
+CREATE TABLE books (
+    id BIGSERIAL PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    author VARCHAR(255) NOT NULL,
+    pages INT NOT NULL,
+    genre VARCHAR(100) NOT NULL,
+    language VARCHAR(50) NOT NULL,
+    year int,
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT now() NOT NULL,
+    updated_at TIMESTAMP WITH TIME ZONE DEFAULT now() NOT NULL
+);
